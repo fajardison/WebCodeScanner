@@ -208,9 +208,9 @@ function toggleFlashAnimation() {
     flashImage.classList.toggle('flash-off');
 
     if (flashImage.classList.contains('flash-off')) {
-        flashImage.src = 'templates/icon/flashlight_on.svg';
+        flashImage.src = 'icon/flashlight_on.svg';
     } else {
-        flashImage.src = 'templates/icon/flashlight_off.svg';
+        flashImage.src = 'icon/flashlight_off.svg';
     }
 }
 
