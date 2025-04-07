@@ -1,0 +1,145 @@
+/* style.css */
+.qr_reader {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  position: relative;
+  background-color: #ccc;
+  color: white;
+  border: 2px solid #172a3a;
+}
+
+.header-cam {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#info-link {
+  padding: 5px;
+}
+
+.header-cam h1 {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 30%;
+  top: 0;
+}
+
+#indicator-text {
+  margin-right: 5px;
+  background: #f0f0f0;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  border: #172a3a;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.scan-results {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scan-result {
+  background: grey;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.focus-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}
+
+.top-left-corner,
+.top-right-corner,
+.bottom-left-corner,
+.bottom-right-corner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.top-left-corner {
+    top: 10%;
+    left: 0;
+    border-left: 2px solid red;
+    border-top: 2px solid red;
+    border-top-left-radius: 10px;
+}
+
+.top-right-corner {
+    top: 10%;
+    right: 0;
+    border-right: 2px solid red;
+    border-top: 2px solid red;
+    border-top-right-radius: 10px;
+}
+
+.center-corner {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 2px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.bottom-left-corner {
+    left: 0;
+    bottom: 10%;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
+    border-bottom-left-radius: 10px;
+}
+
+.bottom-right-corner {
+    right: 0;
+    bottom: 10%;
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    border-bottom-right-radius: 10px;
+}
+
+.cam-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #172a3a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #172a3a;
+}
+
+.cam-btn button {
+  background: #00FF9C;
+  border: none;
+  color: #172a3a;
+  border-radius: 5px;
+  padding: 7px;
+  font-weight: bold;
+}
