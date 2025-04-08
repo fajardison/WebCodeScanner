@@ -1,11 +1,10 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>QR Reader</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="qr_reader">
@@ -13,7 +12,9 @@
       <a id="info-link" href="https://github.com/fajardison/WebCodeScanner/blob/main/README.md">
         <img src="icon/info_circle.svg" alt="info">
       </a>
-      <h1>Barcode Reader</h1>
+      <div class="header-title">
+        <h1>Barcode Reader</h1>
+      </div>
       <div id="indicator-text" style="color: red">Idle</div>
     </div>
 
@@ -42,11 +43,12 @@
     </button>
   </div>
 
-  <div class="result-box">
-    <label for="BarcodeInput">Result:</label>
-    <input id="BarcodeInput" readonly>
+  <div class="Result-code">
+    <label for="codeResult">Result:</label>
+    <input id="codeResult" readonly />
   </div>
 
-  <script src="reader.js"></script>
+  <script type="module" src="reader.js"></script>
+
 </body>
 </html>
